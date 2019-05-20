@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service Business {
+	rpc Recipe(RecipeRequest) returns (RecipeResponse) {}
+}
+
+message RecipeRequest {
+	string requestJSON = 1;
+}
+
+message RecipeResponse {
+	string responseJSON = 1;
+}
+

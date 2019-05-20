@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service Datastore {
+	rpc Recipe(DatastoreRequest) returns (DatastoreResponse) {}
+}
+
+message DatastoreRequest {
+	string requestJSON = 1;
+}
+
+message DatastoreResponse {
+	string responseJSON = 1;
+}
+
